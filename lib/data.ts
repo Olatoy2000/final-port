@@ -2,10 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-// import wordanalyticsImg from "@/public/wordanalytics.png";
 import recipebannerImg from "@/public/new-banner.png";
-import olatoydashboardImg from "@/public/olatoy-dashboard.png"
-
+import olatoydashboardImg from "@/public/olatoy-dashboard.png";
+import  investaImg from '@/public/investaImg.png'
 
 export const links = [
   {
@@ -85,7 +84,7 @@ export const projectsData = [
     description:
       "is a User Interface website App on Investment, with interactive charts and lots more benefit.",
     tags: ["React", "Next.js", "Tailwind", "Framer motion"],
-    imageUrl: olatoydashboardImg,
+    imageUrl: investaImg,
   },
 ] as const;
 

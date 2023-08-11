@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React from "react";
 import SectionHeading from "./section-heading";
@@ -10,13 +10,15 @@ const About = () => {
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
-      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40"
+      className=" max-w-[45rem] text-center leading-8"
     >
       <SectionHeading>About Me</SectionHeading>
       <p className="mb-3">
         After graduating with a degree in{" "}
-        <span className="font-medium">Agriculture</span>, I decided to go with web development, since I understand that it is impossible to succeed in almost any business without some online presence. 
-        Hence I know the opportunities are there and will stay there. My interest is in{" "}
+        <span className="font-medium">Agriculture</span>, I decided to go with
+        web development, since I understand that it is impossible to succeed in
+        almost any business without some online presence. Hence I know the
+        opportunities are there and will stay there. My interest is in{" "}
         <span className="font-medium">frontend web development</span>.{" "}
         <span className="italic">My favorite part of programming</span> is the
         problem-solving aspect. I <span className="underline">love</span> the
