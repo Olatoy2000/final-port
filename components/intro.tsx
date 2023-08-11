@@ -57,53 +57,55 @@ const Intro = () => {
           </motion.span>
         </div>
       </div>
-      <motion.p
-        className="mb-10 mt-4 px-4 font-medium !leading-[1.5] text-2xl sm:text-4xl"
+      <motion.h1
+        className="mb-10 mt-4 h1x-4 font-medium !leading-[1.5] text-2xl sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Toyyib.</span>, a{" "}
+        <span className="font-bold">Hello, I'm Toyyib</span>, a{" "}
         <span className="">Frontend Developer</span>
         {/* <Cursor
           cursorBlinking={false}
           cursorStyle="|"
           cursorColor="#fbe2e3"
-        />{" "} */}
+        />{" "} */}{" "}
         with <span className="">1 - 2 years </span> of experience. I enjoy
         building <span className="italic">websites & apps</span>. My focus is{" "}
         <span className="underline">React (Next.js)</span>
-      </motion.p>
+      </motion.h1>
 
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
-            delay: 0.1,
+          delay: 0.1,
         }}
         className="flex flex-col sm:flex-row justify-center px-4 font-medium text-lg items-center gap-3"
       >
         <Link
           href="#contact"
-          className="bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full "
+          className="bg-gray-900 group text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 cursor-pointer hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
         >
           {" "}
-          Contact me here <BsArrowRight />
+          Contact me here{" "}
+          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
         <a
-          href=""
-          className=" bg-white px-7 py-3 flex items-center gap-2 rounded-full"
+          href="/olatoydev-cv.pdf"
+          download={true}
+          className=" group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10"
         >
           Download CV <HiDownload />
         </a>
         <a
-          href="https://www.linkedin.com/in/toyyib-oladejo-8161bb203"
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full"
+          href="https://www.linkedin.com/in/toyyib-oladejo-8161bb203" target="_blank"
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full  outline-none focus:scale-110 hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10"
         >
           <BsLinkedin />
         </a>
         <a
-          href="https://github.com/Olatoy2000"
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full"
+          href="https://github.com/Olatoy2000" target="_blank"
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full  outline-none focus:scale-[1.15] hover:text-gray-950 hover:scale-[1.15] active:scale-105 transition cursor-pointer border border-black/10"
         >
           <FaGithubSquare />
         </a>

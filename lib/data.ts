@@ -69,7 +69,7 @@ export const projectsData = [
   {
     title: "Food-recipe",
     description:
-      "this is a food recipe app where the user can search meals and save meals for later. I used React query to fetch, cache & prefetch the data. I used APIs from TheMealDB: which is an open, crowd-sourced database of Recipes from around the world.",
+      "this is a food recipe app built with React query to fetch, cache & prefetch the data and APIs from TheMealDB: which is an open, crowd-sourced database of Recipes from around the world.",
     tags: ["React", "Next.js", "ReactQuery", "Tailwind", "mealDB APIs"],
     imageUrl: recipebannerImg,
   },
@@ -81,10 +81,10 @@ export const projectsData = [
     imageUrl: olatoydashboardImg,
   },
   {
-    title: "Word Analytics",
+    title: "Investa",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "is a User Interface website App on Investment, with interactive charts and lots more benefit.",
+    tags: ["React", "Next.js", "Tailwind", "Framer motion"],
     imageUrl: olatoydashboardImg,
   },
 ] as const;
