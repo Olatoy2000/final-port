@@ -21,7 +21,10 @@ const Intro = () => {
   //   const isseoSpecialist = text === "SEO Specialist";
   //   const anOrA = isseoSpecialist ? "an" : "a";
   return (
-    <section className=" mb-28 max-w-[50rem] text-center sm:mb-0">
+    <section
+      id="home"
+      className=" scroll-mt-[100rem] mb-28 max-w-[50rem] text-center sm:mb-0"
+    >
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
@@ -98,13 +101,15 @@ const Intro = () => {
           Download CV <HiDownload />
         </a>
         <a
-          href="https://www.linkedin.com/in/toyyib-oladejo-8161bb203" target="_blank"
+          href="https://www.linkedin.com/in/toyyib-oladejo-8161bb203"
+          target="_blank"
           className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full  outline-none focus:scale-110 hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10"
         >
           <BsLinkedin />
         </a>
         <a
-          href="https://github.com/Olatoy2000" target="_blank"
+          href="https://github.com/Olatoy2000"
+          target="_blank"
           className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full  outline-none focus:scale-[1.15] hover:text-gray-950 hover:scale-[1.15] active:scale-105 transition cursor-pointer border border-black/10"
         >
           <FaGithubSquare />
