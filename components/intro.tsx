@@ -1,15 +1,20 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
-
+import { useInView } from "react-intersection-observer";
+import { useActiveSectionContext } from "@/context/active-section-context";
 const Intro = () => {
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+  });
+  const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
   //   const [text] = useTypewriter({
   //     words: ["Frontend developer", "SEO Specialist", "Reseacher"],
   //     loop: true,
@@ -20,8 +25,15 @@ const Intro = () => {
 
   //   const isseoSpecialist = text === "SEO Specialist";
   //   const anOrA = isseoSpecialist ? "an" : "a";
+
+  useEffect(() => {
+    if (inView && Date.now() - timeOfLastClick > 1000) {
+      setActiveSection("Home");
+    }
+  }, [inView, setActiveSection, timeOfLastClick]);
   return (
     <section
+      ref={ref}
       id="home"
       className=" scroll-mt-[100rem] mb-28 max-w-[50rem] text-center sm:mb-0"
     >
@@ -67,11 +79,7 @@ const Intro = () => {
       >
         <span className="font-bold">Hello, I'm Toyyib</span>, a{" "}
         <span className="">Frontend Developer</span>
-        {/* <Cursor
-          cursorBlinking={false}
-          cursorStyle="|"
-          cursorColor="#fbe2e3"
-        />{" "} */}{" "}
+        
         with <span className="">1 - 2 years </span> of experience. I enjoy
         building <span className="italic">websites & apps</span>. My focus is{" "}
         <span className="underline">React (Next.js)</span>

@@ -1,12 +1,28 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 const About = () => {
+  const { ref, inView } = useInView({
+    threshold: 0.75,
+  });
+  const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
+
+  // when you want to synchronise state with external system use useEffect/sideEffect
+
+  useEffect(() => {
+    if (inView && Date.now() - timeOfLastClick > 1000) {
+      setActiveSection("About");
+    }
+  }, [inView, setActiveSection, timeOfLastClick]);
+
   return (
     <motion.section
+      ref={ref}
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
