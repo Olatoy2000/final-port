@@ -4,7 +4,7 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import recipebannerImg from "@/public/new-banner.png";
 import olatoydashboardImg from "@/public/olatoy-dashboard.png";
-import  investaImg from '@/public/investaImg.png'
+import investaImg from "@/public/investaImg.png";
 
 export const links = [
   {
@@ -39,18 +39,18 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated Software Engineering Trainee",
+    title: "Software Engineering Trainee",
     location: "AFEX, Nigeria",
     description:
-      "I graduated after 6 months of Software Engineering training. Then i was given the opportunity to intern as a front-end developer.",
+      "I undergo a 7 months of Software Engineering training(Frontend track). Then i was given the opportunity to intern as a front-end developer. At the end of the training, I collaborated with other team members from deisgners and backend developers to build the ATS (AFEX Tech Star) website",
     icon: React.createElement(LuGraduationCap),
-    date: "2022",
+    date: "June, 2022 - Dec, 2022",
   },
   {
-    title: " Graduate Inter, Front-End Developer",
+    title: " Graduate Intern, Front-End Developer",
     location: "AFEX, Nigeria",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "I worked as a graduate intern for another 5 months as a graduate intern in the AFEX where i collaborated with both designers and backend team to build some software applications among which are the HR Portal, Smart Card",
     icon: React.createElement(CgWorkAlt),
     date: "Jan, 2023 - May,2023",
   },

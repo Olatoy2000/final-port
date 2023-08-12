@@ -8,9 +8,12 @@ import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "./hooks";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 const Intro = () => {
-const { ref } = useSectionInView('Home', 0.5);
+  const { ref } = useSectionInView("Home", 0.5);
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+
   return (
     <section
       ref={ref}
@@ -59,7 +62,6 @@ const { ref } = useSectionInView('Home', 0.5);
       >
         <span className="font-bold">Hello, I'm Toyyib</span>, a{" "}
         <span className="">Frontend Developer</span>
-        
         with <span className="">1 - 2 years </span> of experience. I enjoy
         building <span className="italic">websites & apps</span>. My focus is{" "}
         <span className="underline">React (Next.js)</span>
@@ -76,6 +78,10 @@ const { ref } = useSectionInView('Home', 0.5);
         <Link
           href="#contact"
           className="bg-gray-900 group text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 cursor-pointer hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          onClick={() => {
+            setActiveSection("Contact");
+            setTimeOfLastClick(Date.now());
+          }}
         >
           {" "}
           Contact me here{" "}
