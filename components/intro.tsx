@@ -1,36 +1,16 @@
 "use client";
 
 import Image from "next/image";
-import React, { useEffect } from "react";
+import React from "react";
 import { motion } from "framer-motion";
-import { useTypewriter, Cursor } from "react-simple-typewriter";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
-import { useInView } from "react-intersection-observer";
-import { useActiveSectionContext } from "@/context/active-section-context";
+import { useSectionInView } from "./hooks";
+
 const Intro = () => {
-  const { ref, inView } = useInView({
-    threshold: 0.5,
-  });
-  const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
-  //   const [text] = useTypewriter({
-  //     words: ["Frontend developer", "SEO Specialist", "Reseacher"],
-  //     loop: true,
-  //     typeSpeed: 100,
-  //     deleteSpeed: 50,
-  //     delaySpeed: 2000,
-  //   });
-
-  //   const isseoSpecialist = text === "SEO Specialist";
-  //   const anOrA = isseoSpecialist ? "an" : "a";
-
-  useEffect(() => {
-    if (inView && Date.now() - timeOfLastClick > 1000) {
-      setActiveSection("Home");
-    }
-  }, [inView, setActiveSection, timeOfLastClick]);
+const { ref } = useSectionInView('Home', 0.5);
   return (
     <section
       ref={ref}
