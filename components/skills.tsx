@@ -23,7 +23,11 @@ const fadeInAnimationVariants = {
 const Skills = () => {
   const { ref } = useSectionInView("Skills");
   return (
-    <section ref={ref} className=" max-w-[53rem] scroll-mt-28 text-center">
+    <section
+      id="skills"
+      ref={ref}
+      className=" max-w-[53rem] scroll-mt-28 text-center"
+    >
       <SectionHeading>My Skills</SectionHeading>
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
         {skillsData.map((skill, index) => (
