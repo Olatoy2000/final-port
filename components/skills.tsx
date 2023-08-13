@@ -26,7 +26,7 @@ const Skills = () => {
     <section
       id="skills"
       ref={ref}
-      className=" max-w-[53rem] scroll-mt-28 text-center"
+      className=" max-w-[53rem] sm:mb-28 scroll-mt-28 text-center"
     >
       <SectionHeading>My Skills</SectionHeading>
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">

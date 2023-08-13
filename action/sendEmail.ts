@@ -1,7 +1,9 @@
 "use server";
 
+import React from "react";
 import { Resend } from "resend";
-import { validateString } from "@/lib/utils";
+import { validateString, getErrorMessage } from "@/lib/utils";
+import ContactFormEmail from "@/email/contact-form-email";
 // instaciating resend
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -20,18 +22,28 @@ export const sendEmail = async (formData: FormData) => {
       error: "Invaid message",
     };
   }
+
+  let data;
   try {
     // then we can use the resend variable to send an email
-    await resend.emails.send({
+    data = await resend.emails.send({
       from: "Contact Form <onboarding@resend.dev>",
       to: "olatoyconsult@gmail.com",
       subject: "message from contact form",
-      text: message as string,
       reply_to: senderEmail as string,
+      react: React.createElement(ContactFormEmail, {
+        message: message as string,
+        senderEmail: senderEmail as string,
+      }),
+      // react: <ContactFormEmail message={message} sendEmail={senderEmail} />,
     });
-  } catch (error: any) {
-   return {
-    error: error.message
-   }
+  } catch (error: unknown) {
+    return {
+      error: getErrorMessage(error),
+    };
   }
+
+  return {
+    data,
+  };
 };
