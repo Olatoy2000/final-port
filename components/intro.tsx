@@ -56,12 +56,12 @@ const Intro = () => {
         </div>
       </div>
       <motion.h1
-        className="mb-10 mt-4 h1x-4 font-medium !leading-[1.5] text-2xl sm:text-4xl"
+        className="mb-10 mt-4 h1x-4 font-medium !leading-[1.5] text-2xl sm:text-4xl dark:text-white/60"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">Hello, I'm Toyyib</span>, a{" "}
-        <span className="">Frontend Developer</span>
+        <span className="">Frontend Developer</span>{" "}
         with <span className="">1 - 2 years </span> of experience. I enjoy
         building <span className="italic">websites & apps</span>. My focus is{" "}
         <span className="underline">React (Next.js)</span>
@@ -90,21 +90,21 @@ const Intro = () => {
         <a
           href="/olatoydev-cv.pdf"
           download={true}
-          className=" group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10"
+          className=" group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10 dark:bg-white/10 dark:text-white/60"
         >
           Download CV <HiDownload />
         </a>
         <a
           href="https://www.linkedin.com/in/toyyib-oladejo-8161bb203"
           target="_blank"
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full  outline-none focus:scale-110 hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10"
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full  outline-none focus:scale-110 hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10 dark:bg-white/10 dark:text-white/60"
         >
           <BsLinkedin />
         </a>
         <a
           href="https://github.com/Olatoy2000"
           target="_blank"
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full  outline-none focus:scale-[1.15] hover:text-gray-950 hover:scale-[1.15] active:scale-105 transition cursor-pointer border border-black/10"
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full  outline-none focus:scale-[1.15] hover:text-gray-950 hover:scale-[1.15] active:scale-105 transition cursor-pointer border border-black/10 dark:bg-white/10 dark:text-white/60"
         >
           <FaGithubSquare />
         </a>

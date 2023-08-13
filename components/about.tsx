@@ -14,11 +14,11 @@ const About = () => {
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
-      className=" max-w-[45rem] text-center scroll-mt-28 leading-8"
+      className=" max-w-[45rem] text-center mb-28 sm:mb-0 scroll-mt-28 leading-8"
       id="about"
     >
       <SectionHeading>About Me</SectionHeading>
-      <p className="mb-3">
+      <p className="mb-3 dark:text-white/60">
         After graduating with a degree in{" "}
         <span className="font-medium">Agriculture</span>, I decided to go with
         web development, since I understand that it is impossible to succeed in
@@ -35,7 +35,7 @@ const About = () => {
         developer.
       </p>
 
-      <p>
+      <p className="dark:text-white/60">
         <span className="italic">When I'm not coding</span>, I enjoy watching
         tutorial videos, listen to lectures, travelling and reading Arabic
         books. I also enjoy{" "}

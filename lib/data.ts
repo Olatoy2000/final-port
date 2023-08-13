@@ -50,18 +50,10 @@ export const experiencesData = [
     title: " Graduate Intern, Front-End Developer",
     location: "AFEX, Nigeria",
     description:
-      "I worked as a graduate intern for another 5 months as a graduate intern in the AFEX where i collaborated with both designers and backend team to build some software applications among which are the HR Portal, Smart Card",
+      "I was given another opportunity to work for another 5 months as a graduate intern in AFEX where i collaborated with both designers and backend team to build some software applications among which are the HR Portal, Smart Card",
     icon: React.createElement(CgWorkAlt),
     date: "Jan, 2023 - May,2023",
   },
-  // {
-  //   title: "Full-Stack Developer",
-  //   location: "Houston, TX",
-  //   description:
-  //     "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-  //   icon: React.createElement(FaReact),
-  //   date: "2021 - present",
-  // },
 ] as const;
 
 export const projectsData = [
@@ -98,7 +90,7 @@ export const skillsData = [
   "Next.js",
   "Jest",
   "Node.js",
-  "Cypress",
+  /* "Cypress", */
   "Github",
   "Bitbucket",
   "MongoDB",

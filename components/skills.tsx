@@ -26,7 +26,7 @@ const Skills = () => {
     <section
       id="skills"
       ref={ref}
-      className=" max-w-[53rem] sm:mb-28 scroll-mt-28 text-center"
+      className=" max-w-[53rem] mb-28 sm:mb-0 scroll-mt-28 text-center"
     >
       <SectionHeading>My Skills</SectionHeading>
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
@@ -40,7 +40,7 @@ const Skills = () => {
               once: true,
             }}
             custom={index}
-            className="bg-white borderBlack rounded-xl px-5 py-3"
+            className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
           >
             {skill}
           </motion.li>
