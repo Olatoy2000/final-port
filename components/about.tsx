@@ -14,7 +14,7 @@ const About = () => {
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
-      className=" max-w-[45rem] text-center mb-28 sm:mb-0 scroll-mt-28 leading-8"
+      className=" max-w-[45rem] text-center mb-28 sm:mb-40 scroll-mt-28 leading-8"
       id="about"
     >
       <SectionHeading>About Me</SectionHeading>

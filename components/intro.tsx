@@ -18,7 +18,7 @@ const Intro = () => {
     <section
       ref={ref}
       id="home"
-      className=" scroll-mt-[100rem] sm:mb-28 max-w-[50rem] text-center"
+      className=" scroll-mt-[100rem] mb:28  sm:mb-40 max-w-[50rem] text-center"
     >
       <div className="flex items-center justify-center">
         <div className="relative">
@@ -62,9 +62,10 @@ const Intro = () => {
       >
         <span className="font-bold">Hello, I'm Toyyib</span>, a{" "}
         <span className="">Frontend Developer</span>{" "}
-        with <span className="">1 - 2 years </span> of experience. I enjoy
+        with 
+        <br /> <span className="">1 - 2 years </span> of experience. I enjoy
         building <span className="italic">websites & apps</span>. My focus is{" "}
-        <span className="underline">React (Next.js)</span>
+        <span className="font-bold italic">React (Next.js)</span>
       </motion.h1>
 
       <motion.div

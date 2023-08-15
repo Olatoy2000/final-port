@@ -2,7 +2,7 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import recipebannerImg from "@/public/new-banner.png";
+import recipebannerImg from "@/public/olatoy-recipe.png";
 import olatoydashboardImg from "@/public/olatoy-dashboard.png";
 import investaImg from "@/public/investaImg.png";
 
@@ -31,10 +31,10 @@ export const links = [
     name: "Contact",
     hash: "#contact",
   },
-  {
+  /*  {
     name: "Blog",
     hash: "#blog",
-  },
+  }, */
 ] as const;
 
 export const experiencesData = [
@@ -60,8 +60,10 @@ export const projectsData = [
   {
     title: "Food-recipe",
     description:
-      "this is a food recipe app built with React query to fetch, cache & prefetch the data and APIs from TheMealDB: which is an open, crowd-sourced database of Recipes from around the world.",
+      "Food recipe app built with React, used React query for data fetching, APIs from TheMealDB(an open, crowd-sourced database of Recipes from around the world)",
     tags: ["React", "Next.js", "ReactQuery", "Tailwind", "mealDB APIs"],
+    demo: "https://olatoy-foodrecipe.netlify.app",
+    code: "https://github.com/Olatoy2000/food-recipe",
     imageUrl: recipebannerImg,
   },
   {
@@ -69,6 +71,8 @@ export const projectsData = [
     description:
       "this is a react admin dashboard build with a pure reactjs using scss and installing react with vite",
     tags: ["React", "JavaScript", "scss"],
+    demo: "https://olatoy-admindashboard.netlify.app",
+    code: "https://github.com/Olatoy2000/dashboard-react",
     imageUrl: olatoydashboardImg,
   },
   {
@@ -76,6 +80,8 @@ export const projectsData = [
     description:
       "is a User Interface website App on Investment, with interactive charts and lots more benefit.",
     tags: ["React", "Next.js", "Tailwind", "Framer motion"],
+    demo: "https://investa-two.vercel.app/",
+    code: "https://github.com/Olatoy2000/investa",
     imageUrl: investaImg,
   },
 ] as const;
@@ -94,7 +100,7 @@ export const skillsData = [
   "Github",
   "Bitbucket",
   "MongoDB",
-  "Prisma",
+  /*  "Prisma", */
   "Netlify",
   "Redux",
   // "PostgreSQL",

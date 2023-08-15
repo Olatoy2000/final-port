@@ -18,15 +18,10 @@ export default function Home() {
       <main className="flex flex-col items-center px-4">
         <ErrorBoundary>
           <Intro />
-          <SectionDivider />
           <About />
-          <SectionDivider />
           <Projects />
-          <SectionDivider />
           <Skills />
-          <SectionDivider />
           <Experience />
-          <SectionDivider />
           <Contact />
         </ErrorBoundary>
       </main>
