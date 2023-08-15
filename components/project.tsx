@@ -55,13 +55,13 @@ const Project = ({
           <div className="flex items-center justify-start gap-2">
             <Link
               href={demo}
-              className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
+              className="bg-[#e85d04] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-sm dark:text-white/70"
             >
               Demo
             </Link>
             <Link
               href={code}
-              className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
+              className="bg-[#e85d04] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-sm dark:text-white/70"
             >
               Code
             </Link>
