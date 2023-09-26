@@ -75,15 +75,15 @@ export const projectsData = [
     code: "https://github.com/Olatoy2000/dashboard-react",
     imageUrl: olatoydashboardImg,
   },
-  {
-    title: "Investa",
-    description:
-      "is a User Interface website App on Investment, with interactive charts and lots more benefit.",
-    tags: ["React", "Next.js", "Tailwind", "Framer motion"],
-    demo: "https://investa-two.vercel.app/",
-    code: "https://github.com/Olatoy2000/investa",
-    imageUrl: investaImg,
-  },
+  // {
+  //   title: "Investa",
+  //   description:
+  //     "is a User Interface website App on Investment, with interactive charts and lots more benefit.",
+  //   tags: ["React", "Next.js", "Tailwind", "Framer motion"],
+  //   demo: "https://investa-two.vercel.app/",
+  //   code: "https://github.com/Olatoy2000/investa",
+  //   imageUrl: investaImg,
+  // },
 ] as const;
 
 export const skillsData = [
