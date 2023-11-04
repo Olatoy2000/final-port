@@ -4,8 +4,7 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import recipebannerImg from "@/public/olatoy-recipe.png";
 import olatoydashboardImg from "@/public/olatoy-dashboard.png";
-import investaImg from "@/public/investaImg.png";
-
+import adviceImg from "@/public/advice-generator.png";
 export const links = [
   {
     name: "Home",
@@ -57,6 +56,15 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "Advice-generator",
+    description:
+      "an Advice Generator App built using Next.js and Tailwind CSS with seamless API integration.",
+    tags: ["React", "Next.js", "Tailwind", "CSS glow generator"],
+    demo: "https://olatoyadvicegenerator.netlify.app/",
+    code: "https://github.com/Olatoy2000/advice-generator",
+    imageUrl: adviceImg,
+  },
   {
     title: "Food-recipe",
     description:
