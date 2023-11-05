@@ -61,8 +61,7 @@ const Intro = () => {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">Hello, I'm Toyyib</span>, a{" "}
-        <span className="">Frontend Developer</span>{" "}
-        with 
+        <span className="">Frontend Developer</span> with
         <br /> <span className="">1 - 2 years </span> of experience. I enjoy
         building <span className="italic">websites & apps</span>. My focus is{" "}
         <span className="font-bold italic">React (Next.js)</span>
@@ -89,7 +88,7 @@ const Intro = () => {
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
         <a
-          href="/olatoydev-cv.pdf"
+          href="/oladejo-toyyib-cv.pdf"
           download={true}
           className=" group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10 dark:bg-white/10 dark:text-white/60"
         >

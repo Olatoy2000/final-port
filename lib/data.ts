@@ -68,7 +68,7 @@ export const projectsData = [
   {
     title: "Food-recipe",
     description:
-      "Food recipe app built with React, used React query for data fetching, APIs from TheMealDB(an open, crowd-sourced database of Recipes from around the world)",
+      "Food recipe app built with React, used React query for data fetching, APIs from TheMealDB",
     tags: ["React", "Next.js", "ReactQuery", "Tailwind", "mealDB APIs"],
     demo: "https://olatoy-foodrecipe.netlify.app",
     code: "https://github.com/Olatoy2000/food-recipe",
