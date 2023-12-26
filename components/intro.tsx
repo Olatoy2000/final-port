@@ -62,7 +62,7 @@ const Intro = () => {
       >
         <span className="font-bold">Hello, I'm Toyyib</span>, a{" "}
         <span className="">Frontend Developer</span> with
-        <br /> <span className="">1 - 2 years </span> of experience. I enjoy
+        <br /> <span className="">2 years </span> of experience. I enjoy
         building <span className="italic">websites & apps</span>. My focus is{" "}
         <span className="font-bold italic">React (Next.js)</span>
       </motion.h1>
